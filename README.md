@@ -87,6 +87,14 @@ ESG_compitition/
 pip install -r requirements.txt
 ```
 
+### ⚠️ 首次 clone 後請額外執行（一次就好）
+
+```bash
+pip install nbstripout
+nbstripout --install
+```
+
+> **為什麼需要這個？** `nbstripout` 會在每次 `git commit` 前自動清除 notebook 的執行輸出（outputs、execution count），避免不同人跑完 notebook 後產生大量無意義的 merge 衝突。本機執行結果**不受影響**。
 
 ---
 
