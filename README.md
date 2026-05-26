@@ -51,15 +51,16 @@
 ```
 ESG_compitition/
 ├── README.md              # 本說明文件
-├── .gitignore             # Git 忽略規則，
+├── .gitignore             # Git 忽略規則
+├── .gitattributes         # nbstripout 設定（自動清除 notebook 輸出）
 ├── requirements.txt       # Python 套件需求（各 branch 自行維護）
+├── exampleCode.ipynb      # 主辦方原始範例程式（參考用）
 │
-├── data/                  # 資料集
+├── data/                  # 資料集（不含於 Git）
 │   ├── vpesg_4k_train_1000.json
 │   └── vpesg_4k_train_1000.csv
 │
-├── notebooks/             # 實驗 Notebooks
-│   ├── baseline.ipynb     # 主辦方提供的 baseline
+├── notebooks/             # 個人實驗 Notebooks
 │   └── exp_YYYY-MM-DD_<實驗名>.ipynb
 │
 └── results/               # 實驗結果
