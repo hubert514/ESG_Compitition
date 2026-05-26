@@ -42,7 +42,7 @@
 | `evidence_string` | str | 證據對應語句 |
 | `evidence_quality` | str | 證據品質標籤 |
 
-> ⚠️ 資料檔案（`data/`）不存放於 GitHub。請自行從主辦方提供的連結下載，放置於 `data/` 資料夾。
+> ⚠️ 資料檔案幫你們放在`data/` 底下。
 
 ---
 
@@ -51,10 +51,10 @@
 ```
 ESG_compitition/
 ├── README.md              # 本說明文件
-├── .gitignore             # Git 忽略規則
+├── .gitignore             # Git 忽略規則，
 ├── requirements.txt       # Python 套件需求（各 branch 自行維護）
 │
-├── data/                  # 資料集（不含於 Git）
+├── data/                  # 資料集
 │   ├── vpesg_4k_train_1000.json
 │   └── vpesg_4k_train_1000.csv
 │
@@ -62,7 +62,7 @@ ESG_compitition/
 │   ├── baseline.ipynb     # 主辦方提供的 baseline
 │   └── exp_YYYY-MM-DD_<實驗名>.ipynb
 │
-└── results/               # 實驗結果（不含於 Git，本機保留）
+└── results/               # 實驗結果
     └── YYYY-MM-DD_<實驗名>/
         ├── config.json    # 超參數設定
         ├── metrics.json   # 評估分數
@@ -76,7 +76,7 @@ ESG_compitition/
 | Branch | 說明 |
 |--------|------|
 | `main` | 穩定版，存放 baseline 與原始資料初始狀態 |
-| `dev` | 整合各成員最佳結果 |
+| `dev` | 整合各最佳結果 |
 | `<name>/exp` | 各成員個人實驗分支 |
 
 ---
@@ -87,7 +87,6 @@ ESG_compitition/
 pip install -r requirements.txt
 ```
 
-建議在 Google Colab（T4 GPU）上執行，或本機有 CUDA 環境時使用。
 
 ---
 
