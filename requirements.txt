@@ -1,5 +1,9 @@
 # ESG Competition - Requirements
 # 各成員請在自己的 branch 更新此檔案
+#
+# ⚠️  首次 clone 後請執行以下指令啟用 notebook 自動清除輸出功能：
+#     pip install nbstripout
+#     nbstripout --install
 
 # Core ML
 torch>=2.0.0
