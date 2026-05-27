@@ -1,0 +1,9 @@
+載入 JSON 後先把 None、''、只有空白的標籤統一轉成 N/A
+ESGDataset.__getitem__ 加防呆，之後如果再有非法標籤，會直接報出 idx、field 和實際值，不會只剩 KeyError: ''
+
+驗證過原始資料：
+
+verification_timeline 有 186 筆空字串
+evidence_status 有 186 筆空字串
+evidence_quality 有 323 筆空字串
+套用正規化後 invalid_count = 0
