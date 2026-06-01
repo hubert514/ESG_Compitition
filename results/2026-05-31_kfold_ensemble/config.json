@@ -1,0 +1,9 @@
+{
+  "model_name": "bert-base-chinese",
+  "max_len": 256,
+  "batch_size": 8,
+  "epochs_per_fold": 5,
+  "learning_rate": 2e-05,
+  "k_folds": 5,
+  "stratify_by_field": "evidence_quality"
+}

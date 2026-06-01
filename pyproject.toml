@@ -1,0 +1,17 @@
+[project]
+name = "esg-compitition"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "nbstripout>=0.9.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+    "torch>=2.12.0",
+    "tqdm>=4.67.3",
+    "transformers>=5.9.0",
+]
