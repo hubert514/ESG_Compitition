@@ -5,6 +5,11 @@
   "gradient_accumulation_steps": 4,
   "effective_batch_size": 8,
   "epochs_per_fold": 5,
+  "use_class_weighted_loss": true,
+  "use_minority_oversampling": true,
+  "oversample_field": "evidence_quality",
+  "min_class_count_ratio": 0.3,
+  "max_duplicates_per_sample": 8,
   "learning_rate": 2e-05,
   "k_folds": 5,
   "stratify_by_field": "evidence_quality"
